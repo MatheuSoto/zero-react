@@ -74,6 +74,7 @@ const browserConfig = {
       inject: true,
       orientation: 'portrait',
       display: 'standalone',
+      start_url: productionHost + 'index.html',
       shortname: nameApp,
       description: nameApp,
       background_color: '#fff',
