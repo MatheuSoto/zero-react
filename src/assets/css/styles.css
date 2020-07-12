@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 /* purgecss start ignore */
-.hola{
-    font-weight: bold;
+:root{
+    margin: 0;
+    padding: 0
 }
 
+::selection {
+    background-color: #f72585;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
 /* purgecss end ignore */

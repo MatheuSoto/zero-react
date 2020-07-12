@@ -20,10 +20,9 @@ const browserConfig = {
   devServer: {
     open: true,
     historyApiFallback: true,
-    contentBase: path.join(__dirname, 'build'),
+    contentBase: path.join(__dirname, '/'),
     compress: true,
-    port: 9000,
-    hot: true
+    port: 9000
   },
   module: {
     rules: [
@@ -67,49 +66,8 @@ const browserConfig = {
     }),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, '/src/assets/static/index.html')
-    }),
-    new WebpackPwaManifestPlugin({
-      name: nameApp,
-      ios: true,
-      inject: true,
-      orientation: 'portrait',
-      display: 'standalone',
-      start_url: productionHost + 'index.html',
-      shortname: nameApp,
-      description: nameApp,
-      background_color: '#fff',
-      theme_color: '#fff',
-      icons: [
-        {
-          src: path.resolve('src/assets/img/icon.png'),
-          sizes: [96, 128, 192, 256, 384, 512],
-          destination: path.join('icons', 'ios'),
-          ios: true
-        }
-      ]
-    }),
-    new WorkboxWebpackPlugin.GenerateSW({
-      runtimeCaching: [
-        {
-          urlPattern: new RegExp(productionHost),
-          handler: 'CacheFirst',
-          options: {
-            cacheName: 'images'
-          }
-        },
-        {
-          urlPattern: new RegExp(productionHost),
-          handler: 'NetworkFirst',
-          options: {
-            cacheName: 'api'
-          }
-        }
-      ]
-    }),
-    new ScriptExtHtmlWebpackPlugin({
-      defaultAttribute: 'defer'
     })
-  ]
+  ].filter(Boolean)
 }
 
 module.exports = browserConfig

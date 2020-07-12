@@ -2,6 +2,8 @@ import React from 'react'
 
 export default () => {
   return (
-    <div className='bg-blue-400 text-orange hola'>HOLA</div>
+    <div className='h-screen w-screen fixed flex items-center justify-center font-medium text-lg'>
+      Zero Start
+    </div>
   )
 }
