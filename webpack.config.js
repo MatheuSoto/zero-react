@@ -7,8 +7,8 @@ const WorkboxWebpackPlugin = require('workbox-webpack-plugin')
 const path = require('path')
 
 // Change variables
-const productionHost = 'https://miweb.com'
-const nameApp = 'My App'
+const productionHost = 'https://zero-react.vercel.app/'
+const nameApp = 'Zero Start'
 
 const browserConfig = {
   entry: './src/index.js',
