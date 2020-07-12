@@ -7,7 +7,7 @@
     "dev": "SET NODE_ENV=development & webpack-dev-server",
     "postcss": "postcss src/assets/css/styles.css -o src/assets/css/build.css -w",
     "postcss:build": "SET NODE_ENV=production & postcss src/assets/css/styles.css -o src/assets/css/build.css",
-    "build": "npm run postcss:build & webpack --mode production",
+    "build": "npm run postcss:build & SET NODE_ENV=production & webpack --mode production",
     "start:dev": "npx serve build -s",
     "serve": "npm run build && npm run start:dev"
   },
