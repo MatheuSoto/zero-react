@@ -10,6 +10,7 @@
   <a class="skip-link" href="#maincontent">Skip to main</a>
   <div id="app"></div>
   <script>
+    console.log('TEST')
     if('serviceWorker' in navigator){
       window.addEventListener('load', function(){
         navigator.serviceWorker.register('/service-worker.js')
