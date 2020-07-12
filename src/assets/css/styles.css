@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* purgecss start ignore */
+.hola{
+    font-weight: bold;
+}
+
+/* purgecss end ignore */

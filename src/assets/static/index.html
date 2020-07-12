@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="public/media/favicon.png">
+  <title>My App</title>
+</head>
+<body>
+  <a class="skip-link" href="#maincontent">Skip to main</a>
+  <div id="app"></div>
+  <noscript>
+    <h3>Esta app necesita Javascript para funcionar</h3>
+  </noscript>
+  <script>
+    if('serviceWOrker' in navigator){
+      window.addEventListener('load', function(){
+        navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('SW registrado')
+          })
+      })
+    }
+  </script>
+</body>
+</html>
