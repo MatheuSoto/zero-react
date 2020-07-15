@@ -26,6 +26,7 @@
     "mini-css-extract-plugin": "^0.9.0",
     "postcss": "^7.0.32",
     "postcss-cli": "^7.1.1",
+    "postcss-easy-import": "^3.0.0",
     "script-ext-html-webpack-plugin": "^2.1.4",
     "stylelint-config-recommended": "^3.0.0",
     "tailwindcss": "^1.4.6",

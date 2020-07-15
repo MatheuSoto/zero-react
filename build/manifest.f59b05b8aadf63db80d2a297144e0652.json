@@ -1,0 +1,43 @@
+{
+  "icons": [
+    {
+      "src": "/icons/ios/icon_512x512.6d9c5d8055bb6ea0a42ef6030acb7245.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ios/icon_384x384.7e9501b91de800c3f1fae2e02d8d515e.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ios/icon_256x256.45da44d9d2c6895bb43438f6066f4aa1.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ios/icon_192x192.a378fd0dbc5498455081a94898b3a7d2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ios/icon_128x128.7e03d06f335eb4b88fbbff3d412bad9e.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/ios/icon_96x96.baef345c6a514addbafed893ef1f0e75.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Zero Start",
+  "short_name": "Zero Start",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "https://zero-react.vercel.app/index.html",
+  "shortname": "Zero Start",
+  "description": "Zero Start",
+  "background_color": "#fff",
+  "theme_color": "#fff"
+}

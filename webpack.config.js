@@ -34,7 +34,7 @@ const browserConfig = {
         test: [/\.svg$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
         loader: 'file-loader',
         options: {
-          name: '/build/media/[name].[ext]'
+          name: 'build/media/[name].[ext]'
         }
       },
       {
@@ -92,7 +92,7 @@ const browserConfig = {
       theme_color: '#fff',
       icons: [
         {
-          src: path.resolve('src/assets/img/icon.png'),
+          src: path.resolve('src/assets/img/pwa.png'),
           sizes: [96, 128, 192, 256, 384, 512],
           destination: path.join('icons', 'ios'),
           ios: true

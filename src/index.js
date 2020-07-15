@@ -4,6 +4,7 @@ import { render } from 'react-dom'
 import App from './App'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from './store/index'
+import './assets/img/favicon.png'
 import './assets/css/build.css'
 
 render(

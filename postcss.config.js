@@ -12,6 +12,7 @@ const cssnano = require('cssnano')
 
 module.exports = {
   plugins: [
+    require('postcss-easy-import'),
     require('tailwindcss'),
     require('autoprefixer'),
     process.env.NODE_ENV.trim() === 'production' ? purgecss : null,
