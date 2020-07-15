@@ -8,9 +8,12 @@
 </head>
 <body>
   <a class="skip-link" href="#maincontent">Skip to main</a>
-  <div id="app"></div>
+  <div id="app">
+    <div style="width: 100vw; height: 100vh; position: fixed; top: 0; left: 0; display: flex; justify-content: center;align-items: center; font-size: 1.125rem;">
+      Zero Start
+    </div>
+  </div>
   <script>
-    console.log('TEST')
     if('serviceWorker' in navigator){
       window.addEventListener('load', function(){
         navigator.serviceWorker.register('/service-worker.js')
