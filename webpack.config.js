@@ -20,6 +20,7 @@ const browserConfig = {
     filename: 'app.bundle.js',
     publicPath: '/'
   },
+  devtool: 'eval-source-map',
   devServer: {
     open: true,
     historyApiFallback: true,
@@ -57,6 +58,14 @@ const browserConfig = {
         }
       }
     ]
+  },
+  resolve: {
+    extensions: ['.js'],
+    alias: {
+      '@': path.resolve('src'),
+      '@hooks': path.resolve('src/helpers/hooks'),
+      '@helpers': path.resolve('src/helpers')
+    }
   },
   plugins: [
     new CopyPlugin({
