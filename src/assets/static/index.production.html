@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="public/media/favicon.png">
+  <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@700&display=swap" rel="stylesheet">
   <title>My App</title>
 </head>
 <body>
@@ -17,8 +18,8 @@
     if('serviceWorker' in navigator){
       window.addEventListener('load', function(){
         navigator.serviceWorker.register('/service-worker.js')
-          .then(registration => {
-            console.log('SW registrado')
+          .catch(err => {
+            console.log('Error on register SW')
           })
       })
     }
