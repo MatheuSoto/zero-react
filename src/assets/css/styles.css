@@ -10,7 +10,7 @@
     font-display: swap;
     src: local('Baloo Da 2 Bold'), local('BalooDa2-Bold'), url(https://fonts.gstatic.com/s/balooda2/v1/2-ch9J9j0IaUMQZwAJyJSlL4tYxiYl3z.woff2) format('woff2');
     unicode-range: U+0964-0965, U+0981-09FB, U+200C-200D, U+20B9, U+25CC;
-  }
+}
 /* vietnamese */
 @font-face {
     font-family: 'Baloo Da 2';
