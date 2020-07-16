@@ -63,7 +63,7 @@ const browserConfig = {
     extensions: ['.js'],
     alias: {
       '@': path.resolve('src'),
-      '@hooks': path.resolve('src/helpers/hooks'),
+      '@img': path.resolve('src/assets/img'),
       '@helpers': path.resolve('src/helpers')
     }
   },

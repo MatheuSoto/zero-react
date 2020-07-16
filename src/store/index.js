@@ -1,23 +1,19 @@
 import React, { createContext, useReducer, useContext } from 'react'
-import { loadState, saveState, clearState } from '@helpers/persistData/localStorage'
-import { examsReducer, examsInitialState } from './exams'
-import { testimonialsReducer, testimonialsInitialState } from './testimonials'
+import { loadState, saveState } from '@helpers/persistData/localStorage'
+import { counterReducer, counterInitialState } from './counter'
 
 const Context = createContext()
 
-const reducer = ({ exams, testimonials }, action) => {
+const reducer = ({ counter }, action) => {
   const reducers = {
-    exams: examsReducer(exams, action),
-    testimonials: testimonialsReducer(testimonials, action)
+    counter: counterReducer(counter, action)
   }
-  // saveState(reducers)
-  // clearState()
+  saveState(reducers)
   return reducers
 }
 
 const initialState = loadState() || {
-  exams: examsInitialState,
-  testimonials: testimonialsInitialState
+  counter: counterInitialState
 }
 
 export const Provider = ({ children }) => {
