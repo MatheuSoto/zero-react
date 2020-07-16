@@ -1,3 +1,5 @@
+/* purgecss start ignore */
+
 :root{
     margin: 0;
     padding: 0;
@@ -69,3 +71,5 @@
       transform: rotate(360deg);
     }
 }
+
+/* purgecss end ignore */
