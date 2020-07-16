@@ -20,7 +20,6 @@ const browserConfig = {
     filename: 'app.bundle.js',
     publicPath: '/'
   },
-  devtool: 'eval-source-map',
   devServer: {
     open: true,
     historyApiFallback: true,
